@@ -13,4 +13,6 @@ sudo sudo update-grub
 #Disable IPV6 network interface
 sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
 sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+sudo sysctl -w net.ipv6.conf.lo.disable_ipv6=1
 sudo sysctl -p	
+sysctl -a 2>/dev/null | grep disable_ipv6
