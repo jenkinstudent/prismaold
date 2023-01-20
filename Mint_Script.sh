@@ -17,3 +17,6 @@ sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
 sudo sysctl -w net.ipv6.conf.lo.disable_ipv6=1
 sudo sysctl -p	
 sysctl -a 2>/dev/null | grep disable_ipv6
+sudo apt-get install -y libqt5webkit5
+sudo apt-get update 
+sudo apt-get autoclean -y
